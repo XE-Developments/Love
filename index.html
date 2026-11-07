@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08060b"><title>My Proposal ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="config.js"></script>
+</head>
+<body>
+<div class="grain"></div><div class="petal-layer" aria-hidden="true"></div>
+<header class="nav">
+ <a class="brand" href="#home"><span>♡</span><b id="brandName">My Proposal</b></a>
+ <nav><a href="#home">Home</a><a href="#story">Our Story</a><a href="#proposal">The Proposal</a><a href="#memories">Memories</a><a href="#gallery">Gallery</a><a href="#messages">Messages</a><a href="#surprise">Surprise</a></nav>
+ <button class="nav-icon" id="musicToggle" title="Toggle music">♫</button>
+</header>
+
+<!-- Stage 1: envelope opening -->
+<section class="intro-screen active" id="introScreen">
+ <div class="intro-particles"></div><div class="intro-card">
+  <div class="intro-kicker">A LITTLE SOMETHING FOR YOU</div>
+  <div class="envelope-wrap"><div class="envelope"><div class="envelope-flap"></div><div class="envelope-heart">♡</div><div class="envelope-seal">✦</div></div></div>
+  <h1 id="openingHeadline">There's something I want to show you...</h1>
+  <p id="openingSubtext">Not just a website, but a little piece of my heart.</p>
+  <button class="glow-button" id="openLetter">Open the letter <span>↗</span></button>
+  <small> (Tap to continue) </small>
+ </div>
+ <div class="intro-bottom">MADE WITH A LITTLE COURAGE <span>♡</span></div>
+</section>
+
+<!-- Stage 2: secret code -->
+<section class="code-screen" id="codeScreen">
+ <div class="code-orbit"></div><div class="code-panel glass">
+  <div class="mini-heart">♡</div><div class="kicker">BEFORE YOU CONTINUE...</div>
+  <h2>Enter the <em>secret code</em></h2><p>It's something special, just for you ♡</p>
+  <form id="unlockForm" class="code-form"><input id="secretCode" type="password" placeholder="Enter secret code" autocomplete="off" aria-label="Secret code"><button>Unlock ♡</button></form>
+  <small id="codeFeedback" aria-live="polite"></small>
+ </div>
+</section>
+
+<main id="mainSite" class="site-hidden">
+ <section class="hero" id="home">
+  <div class="hero-image"></div><div class="hero-copy reveal">
+   <div class="kicker">A SPECIAL SURPRISE ♡</div><h1 id="heroTitle">A Proposal<br><em>For You</em> <span>♡</span></h1>
+   <p id="heroIntro">A little website, a big question...</p><p class="hero-sub">Open it to see what's inside. ♡</p>
+   <a href="#story" class="text-link">Scroll down <span>↓</span></a>
+  </div>
+  <div class="hero-polaroids reveal"><figure class="polaroid polaroid-one"><img src="assets/couple-sunset.jpg" alt="Couple watching a sunset"><figcaption>To my favourite person ♡</figcaption></figure><figure class="polaroid polaroid-two"><img src="assets/hands-heart.jpg" alt="Hands forming a heart at sunset"><figcaption>Just us</figcaption></figure></div>
+  <div class="hero-stamp">A LITTLE<br>FOREVER<br><b>♡</b></div>
+ </section>
+
+ <div class="quick-nav"><a href="#story"><i>♡</i>Our Story</a><a href="#proposal"><i>♢</i>The Proposal</a><a href="#gallery"><i>▧</i>Gallery</a><a href="#messages"><i>✉</i>Messages</a><a href="#surprise"><i>♧</i>Surprise</a></div>
+
+ <section class="story-grid section" id="story">
+  <div class="story-copy reveal"><div class="kicker">CHAPTER 01 / THE BEGINNING</div><h2 id="storyTitle">Our <em>Story</em> ♡</h2><p class="muted" id="storyIntro">Two hearts. One beautiful journey.</p><div class="timeline" id="timeline"></div></div>
+  <div class="story-photo reveal"><img src="assets/lantern-lake.jpg" alt="A lantern beside a romantic lake"><div class="photo-caption">Every little moment led me here. ♡</div></div>
+ </section>
+
+ <section class="proposal-section section" id="proposal">
+  <div class="proposal-image reveal"><img src="assets/roses-letter.jpg" alt="Pink roses and a letter by candlelight"></div>
+  <div class="proposal-copy reveal"><div class="kicker">CHAPTER 02 / THE QUESTION</div><h2>The <em>Proposal</em> ♡</h2><p id="proposalQuestion">Not just a question... but a promise for tomorrow.</p><button class="glow-button" id="readPromise">Read the promise <span>↗</span></button><p class="promise-text" id="promiseText"></p></div>
+ </section>
+
+ <section class="gallery-section section" id="gallery">
+  <div class="section-head reveal"><div class="kicker">CHAPTER 03 / LITTLE TIME CAPSULE</div><h2>Our <em>Gallery</em></h2><p class="muted">Little moments that mean everything.</p></div>
+  <div class="gallery-grid" id="galleryGrid"></div>
+ </section>
+
+ <section class="memories-section section" id="memories">
+  <div class="memory-film reveal"><div class="film-label">A FEW FRAMES FROM OUR STORY</div><div class="film-strip" id="filmStrip"></div></div>
+ </section>
+
+ <section class="letter-section section" id="messages">
+  <div class="letter-paper reveal"><div class="letter-flower">✿</div><div class="kicker">SOME WORDS FROM MY HEART</div><h2 id="letterTitle">A Letter <em>For You</em> ♡</h2><p class="letter-copy" id="letterText"></p><div class="signature">With love, <span id="fromName">Someone Special</span> ♡</div></div>
+  <div class="message-list reveal" id="messageList"></div>
+ </section>
+
+ <section class="surprise-section section" id="surprise">
+  <div class="surprise-backdrop"></div><div class="surprise-content reveal"><div class="kicker">CHAPTER 04 / ONE LAST THING</div><div class="gift-box">🎁</div><h2>A Little <em>Surprise</em></h2><p id="surpriseMessage">There's one more thing I want you to know...</p><button class="glow-button" id="openSurprise">Open your surprise ♡</button><div id="surpriseReveal"></div></div>
+ </section>
+
+ <section class="final-section" id="final">
+  <div class="final-bg"></div><div class="final-content reveal"><div class="kicker">SO HERE IT IS...</div><h2>Will You <em>Be Mine?</em> ♡</h2><p>Not just today, but for all the little tomorrows...</p><div class="final-actions"><button class="glow-button" id="yesButton">Yes! ♡</button><button class="soft-button" id="thinkButton">Let me think ♡</button></div><p id="finalResponse" aria-live="polite"></p></div>
+ </section>
+</main>
+<footer><div class="heartbeat">⌁ <span>♡</span> ⌁</div><p>MADE WITH <b>♡</b> JUST FOR YOU</p></footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body></html>
